@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HALAMAN PEMBUKA -->
+<div id="pembuka" class="min-vh-100 d-flex align-items-center text-center">
+    <div class="container py-5">
+        <p class="text-uppercase small" style="letter-spacing:4px;">
+            Undangan Pernikahan
+        </p>
+
+        <h1 class="section-title display-4">The Wedding Of</h1>
+
+        <h2 class="nama-pembuka mt-4">Ali & Aliya</h2>
+
+        <p class="mt-3">Sabtu, 21 November 2026</p>
+
+        <p class="text-secondary">
+            Kami mengundang Anda untuk hadir di hari bahagia kami.
+        </p>
+
+        <button class="btn btn-pink mt-3" onclick="bukaUndangan()">
+            <i class="bi bi-envelope-open me-2"></i>
+            Buka Undangan
+        </button>
+    </div>
+</div>
+
+<!-- ISI UNDANGAN -->
+<div id="undangan">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda">
+                <i class="bi bi-heart-fill"></i> Wedding Invitation
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mempelai">Mempelai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acara">Detail Acara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lokasi">Lokasi</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-pink" href="#rsvp">
+                            Konfirmasi Kehadiran
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-7 text-center">
+                    <p class="text-uppercase small" style="letter-spacing:4px;">
+                        Undangan Pernikahan
+                    </p>
+
+                    <h1 class="nama">Ali Ibra</h1>
+                    <h2 class="section-title my-2">&</h2>
+                    <h1 class="nama">Aliya cahya</h1>
+
+                    <p class="mt-4">
+                        Dengan penuh rasa syukur dan bahagia, kami
+                        mengundang Bapak/Ibu/Saudara/i untuk hadir
+                        dalam acara pernikahan kami.
+                    </p>
+
+                    <div class="tanggal-info mt-4 p-3 rounded-pill text-white">
+                        <i class="bi bi-calendar-heart me-2"></i>
+                        21 November 2026
+                        <span class="mx-2">|</span>
+                        <i class="bi bi-clock me-1"></i>
+                        10.00 WIB
+                    </div>
+                </div>
+
+                <div class="col-md-5 text-center" id="mempelai">
+                    <img
+                        src="pernikahan.jpg"
+                        alt="Foto pasangan pengantin"
+                        class="hero-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="container">
+        <div class="countdown-section text-center shadow-sm">
+            <h2 class="section-title mb-4">Menuju Hari Bahagia</h2>
+
+            <div class="row justify-content-center g-2">
+                <div class="col-3 col-md-2">
+                    <div class="count-box">
+                        <h3 id="hari">00</h3>
+                        <small>Hari</small>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-2">
+                    <div class="count-box">
+                        <h3 id="jam">00</h3>
+                        <small>Jam</small>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-2">
+                    <div class="count-box">
+                        <h3 id="menit">00</h3>
+                        <small>Menit</small>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-2">
+                    <div class="count-box">
+                        <h3 id="detik">00</h3>
+                        <small>Detik</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL ACARA -->
+    <section class="container py-5" id="acara">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Detail Acara</h2>
+            <p class="text-secondary">
+                Merupakan kebahagiaan bagi kami jika Anda hadir.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="content-card">
+                    <h3 class="section-title mb-4">
+                        <i class="bi bi-calendar-heart me-2"></i>
+                        Akad Nikah
+                    </h3>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="icon-circle">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <div>
+                            <strong>Tanggal</strong>
+                            <p class="mb-0 mt-1">Sabtu, 21 November 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="icon-circle">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Waktu</strong>
+                            <p class="mb-0 mt-1">08.00 - 10.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <div class="icon-circle">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Lokasi</strong>
+                            <p class="mb-0 mt-1">Gedung grand city convetion</p>
+                            <small class="text-secondary">
+                                Surabaya, Jawa Timur
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-card">
+                    <h3 class="section-title mb-4">
+                        <i class="bi bi-stars me-2"></i>
+                        Resepsi
+                    </h3>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="icon-circle">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <div>
+                            <strong>Tanggal</strong>
+                            <p class="mb-0 mt-1">Sabtu, 21 November 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="icon-circle">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Waktu</strong>
+                            <p class="mb-0 mt-1">11.00 - 14.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <div class="icon-circle">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Lokasi</strong>
+                            <p class="mb-0 mt-1">Gedung grand city convetion</p>
+                            <small class="text-secondary">
+                                Surabaya, Jawa Timur
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOKASI -->
+    <section class="container pb-5" id="lokasi">
+        <div class="content-card text-center">
+            <i class="bi bi-geo-alt-fill fs-1 ikon-lokasi"></i>
+
+            <h2 class="section-title mt-3">Lokasi Acara</h2>
+
+            <p>Gedung grand city convetion, Surabaya, Jawa Timur</p>
+
+            <a href="https://maps.app.goo.gl/8WrWpqQyLGsGcCvq5"
+               target="_blank" rel="noopener"
+               class="btn btn-pink">
+                <i class="bi bi-map me-2"></i>
+                Buka Google Maps
+            </a>
+        </div>
+    </section>
+
+ 
+
+    <!-- FOOTER -->
+    <footer>
+        <i class="bi bi-heart-fill"></i>
+        Terima kasih atas doa dan kehadiran Anda
+        <i class="bi bi-heart-fill"></i>
+
+        <p class="footer-small mt-2 mb-0">
+            Ali & Aliya | 2026
+        </p>
+    </footer>
+
+</div>
+
+<script src="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

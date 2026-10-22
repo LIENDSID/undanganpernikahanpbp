@@ -1,0 +1,189 @@
+
+/* Tampilan dasar */
+body {
+    background-color: #fffaf7;
+    color: #4b3b3b;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Halaman pembuka */
+#pembuka {
+    background: linear-gradient(135deg, #fff4f0, #f3dfe5);
+}
+
+.nama-pembuka {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #a34f6b;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff8f6;
+}
+
+.navbar-brand {
+    color: #a34f6b;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+
+.nav-link {
+    color: #55444a;
+}
+
+.nav-link:hover {
+    color: #a34f6b;
+}
+
+/* Tombol */
+.btn-pink {
+    background-color: #a34f6b;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+.btn-pink:hover {
+    background-color: #803b53;
+    color: white;
+}
+
+/* Bagian utama */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fff4f0, #f6e5e7);
+}
+
+.nama {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(42px, 6vw, 68px);
+    color: #91465f;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #91465f;
+    font-weight: 700;
+}
+
+.tanggal-info {
+    background-color: #a34f6b;
+}
+
+/* Foto mempelai */
+.hero-img {
+    width: 100%;
+    max-width: 380px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 200px 200px 30px 30px;
+    border: 7px solid white;
+    box-shadow: 0 8px 25px #b68b9633;
+}
+
+/* Countdown */
+.countdown-section {
+    background-color: #f7e9ec;
+    padding: 35px 15px;
+    border-radius: 20px;
+    margin-top: -35px;
+    position: relative;
+}
+
+.count-box {
+    background: white;
+    border-radius: 12px;
+    padding: 15px 8px;
+    border: 1px solid #f1dce2;
+}
+
+.count-box h3 {
+    color: #a34f6b;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Kartu detail */
+.content-card {
+    height: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #f0e1e3;
+    box-shadow: 0 5px 20px #a34f6b0d;
+}
+
+/* Ikon */
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    background: #f8e9ed;
+    color: #a34f6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.ikon-lokasi {
+    color: #a34f6b;
+}
+
+/* Formulir */
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #c78399;
+    box-shadow: 0 0 0 0.2rem #a34f6b20;
+}
+
+/* Footer */
+footer {
+    background-color: #f7e9ec;
+    color: #91465f;
+    padding: 25px 10px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+.footer-small {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Menyembunyikan isi undangan sebelum dibuka */
+#undangan {
+    display: none;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-img {
+        height: 350px;
+        max-width: 300px;
+        margin-top: 30px;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+}
